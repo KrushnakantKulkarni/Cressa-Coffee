@@ -1,0 +1,13 @@
+.anchor{
+    text-decoration: none;
+}
+
+.socail{
+  display: inline-block ;
+  margin-right:  20px ;
+}
+
+.navbar-nav .nav-item {
+  margin-right: 15px; /* Add margin to the right */
+}
+

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>View Cart</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    /* Add your custom styles here */
+    body {
+      background-image: url('background.jpeg'); /* Specify the path to your image */
+      background-size: cover; /* Cover the entire background */
+      background-position: center; /* Center the background */
+      background-repeat: no-repeat; /* Do not repeat the background */
+      color: #333; /* Dark text color */
+    }
+
+    .navbar {
+      background-color: #d52b1e; /* Reddish color */
+    }
+
+    .navbar-brand {
+      font-size: 1.75rem;
+      font-weight: bold;
+    }
+
+    .navbar-nav .nav-link {
+      font-size: 1.2rem;
+      margin-right: 1rem;
+      color: #fff; /* White text for navbar links */
+    }
+
+    .cart-container {
+      background-color: rgba(255, 255, 255, 0.8); /* Adjust opacity for better readability */
+      border-radius: 15px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+    }
+
+    .cart-item {
+      margin-bottom: 20px;
+    }
+
+    .cart-item img {
+      border-radius: 10px;
+    }
+
+    .btn-remove {
+      background-color: #dc3545; /* Red color for remove button */
+    }
+
+    .btn-make-payment {
+      background-color: #28a745; /* Green color for make payment button */
+    }
+
+    .toppings-container {
+      background-color: rgba(255, 255, 255, 0.8); /* Adjust opacity for better readability */
+      border-radius: 15px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+    }
+
+    .topping-item {
+      margin-bottom: 20px;
+    }
+
+    .topping-item .btn-add {
+      background-color: #007bff; /* Blue color for add topping button */
+    }
+
+    footer {
+      background-color: #2c2c2c; /* Dark background for footer */
+    }
+
+    footer p {
+      margin: 0;
+      padding: 10px;
+      color: #f2f2f2; /* Light text color for footer */
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <a class="navbar-brand" href="#">Cressa-coffee</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="/index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/LogIn.html">Login</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/viewcart.html">View Cart</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/view.html">Orders</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/Register.html">Register</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Cart items -->
+  <div class="container mt-4 cart-container">
+    <h2 class="mb-4">Your Cart</h2>
+    <div class="row">
+      <div class="col-lg-4 mb-4 cart-item">
+        <div class="card">
+          <img src="product1.jpg" class="card-img-top" alt="Product 1">
+          <div class="card-body">
+            <h5 class="card-title">Product 1</h5>
+            <p class="card-text">Price: $10</p>
+            <button class="btn btn-danger btn-remove">Remove</button>
+          </div>
+        </div>
+      </div>
+      <!-- Repeat this card structure for each item in the cart -->
+    </div>
+  </div>
+
+  <!-- Make Payment Button -->
+  <div class="container mt-4">
+    <button class="btn btn-success btn-make-payment btn-block">Make Payment</button>
+  </div>
+
+  <!-- Toppings section -->
+  <div class="container mt-4 toppings-container">
+    <h2 class="mb-4">Add Toppings</h2>
+    <div class="row">
+      <div class="col-lg-4 mb-4 topping-item">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Extra Cheese for Pizza</h5>
+            <p class="card-text">Price: $2</p>
+            <button class="btn btn-primary btn-add">Add</button>
+          </div>
+        </div>
+      </div>
+      <!-- Repeat this card structure for each topping option -->
+    </div>
+  </div>
+
+  <footer class="bg-dark text-white py-5">
+    <div class="container">
+      <div class="row">
+        <!-- Contact Information Section -->
+        <div class="col-md-4 mb-4">
+          <h5>Contact Information</h5>
+          <ul class="list-unstyled">
+            <li>Email: Cressa-Coffee@gmail.com</li>
+            <li>Phone: +91 123-456-7890</li>
+            <li>Address: Near ABC chawk, Pune, Maharashtra</li>
+          </ul>
+        </div>
+        <!-- Social Media Links Section -->
+        <div class="col-md-4 mb-4">
+          <h5>Follow Us</h5>
+          <ul class="list-unstyled">
+            <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+            <li><a href="#"><i class="fab fa-facebook"></i> Facebook</a></li>
+          </ul>
+        </div>
+        <!-- Professional Logo Section -->
+        <div class="col-md-4">
+          <h5>Our Restaurant</h5>
+          <p>Must visit Place</p>
+        </div>
+      </div>
+      <!-- Copyright Information -->
+      <div class="row">
+        <div class="col text-center">
+          <p>&copy; 2024 Our Restaurant. All rights reserved.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS and dependencies -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

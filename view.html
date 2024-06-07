@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ordered Products</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-image: url('background.jpeg'); /* Specify the path to your image */
+      background-size: cover; /* Cover the entire background */
+      background-position: center; /* Center the background */
+      background-repeat: no-repeat; /* Do not repeat the background */
+      background-color: #f2f2f2; /* Fallback background color */
+      color: #333; /* Dark text color */
+    }
+
+    .ordered-products-container {
+      max-width: 800px;
+      margin: auto;
+      margin-top: 50px;
+      background-color: rgba(255, 255, 255, 0.8); /* Adjust opacity for better readability */
+      border-radius: 15px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+    }
+
+    .table {
+      width: 100%;
+    }
+
+    .table th, .table td {
+      padding: 8px;
+      vertical-align: top;
+      border-top: 1px solid #dee2e6;
+    }
+
+    .table th {
+      background-color: #f2f2f2;
+    }
+    .navbar {
+      background-color: #d52b1e; /* Reddish color */
+    }
+
+    .navbar-brand {
+      font-size: 1.75rem;
+      font-weight: bold;
+    }
+
+    .navbar-nav .nav-link {
+      font-size: 1.2rem;
+      margin-right: 1rem;
+      color: #fff; /* White text for navbar links */
+    }
+    
+    footer {
+      background-color: #2c2c2c; /* Dark background for footer */
+    }
+
+    footer p {
+      position: relative;
+      margin: 0;
+      padding: 10px;
+      color: #f2f2f2; /* Light text color for footer */
+    }
+
+  </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+          <a class="navbar-brand" href="#">Cressa-coffee</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="/index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/LogIn.html">Login</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/viewcart.html">View Cart</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/view.html">Orders</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/Register.html">Register</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-10">
+        <div class="ordered-products-container">
+          <h2 class="text-center mb-4">Ordered Products</h2>
+          <table class="table">
+            <thead>
+              <tr>
+                <th>Username</th>
+                <th>Ordered Products</th>
+              </tr>
+            </thead>
+            <tbody>
+              <!-- Table rows will be dynamically generated here -->
+              <tr>
+                <td>User1</td>
+                <td>Product A, Product B</td>
+              </tr>
+              <tr>
+                <td>User2</td>
+                <td>Product C, Product D, Product E</td>
+              </tr>
+              <!-- Add more rows as needed -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer class="bg-dark text-white py-5">
+    <div class="container">
+      <div class="row">
+        <!-- Contact Information Section -->
+        <div class="col-md-4 mb-4">
+          <h5>Contact Information</h5>
+          <ul class="list-unstyled">
+            <li>Email: Cressa-Coffee@gmail.com</li>
+            <li>Phone: +91 123-456-7890</li>
+            <li>Address: Near ABC chawk, Pune, Maharashtra</li>
+          </ul>
+        </div>
+        <!-- Social Media Links Section -->
+        <div class="col-md-4 mb-4">
+          <h5>Follow Us</h5>
+          <ul class="list-unstyled">
+            <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+            <li><a href="#"><i class="fab fa-facebook"></i> Facebook</a></li>
+          </ul>
+        </div>
+        <!-- Professional Logo Section -->
+        <div class="col-md-4">
+          <h5>Our Restaurant</h5>
+          <p>Must visit Place</p>
+        </div>
+      </div>
+      <!-- Copyright Information -->
+      <div class="row">
+        <div class="col text-center">
+          <p>&copy; 2024 Our Restaurant. All rights reserved.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+  </footer>
+  <!-- Bootstrap JS and dependencies -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
